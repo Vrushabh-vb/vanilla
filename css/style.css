@@ -1,0 +1,67 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+}
+.brands{
+    margin-top: 100px;
+    font-weight: inherit;
+    font-weight: 700
+}
+.trending{
+    margin-top: 50px;
+}
+.header{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.trends{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* cards animation */
+.card {
+    width: 300px;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.00);
+  }
+
+  /* nav right side icons animation */
+  .carts{
+    width: 300px;
+    transition: transform 0.3s;
+  }
+
+  .carts:hover{
+    transform: scale(1.2);
+  }
+  .navbar{
+    font-weight: bold;
+
+   
+  }
+
+  .navbar:hover{
+    color: blueviolet;
+  }
+  
+
+  .footer{
+    background: #ffffff;  /* fallback for old browsers */
+   
+
+  }
+
+
+  .img{
+    
+  }
+  /* Add this CSS to your style.css or in a <style> tag in the HTML document */
+

@@ -1,0 +1,62 @@
+.flex{
+    display: flex;
+}
+.nav{
+    color: black;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+
+/* hovar card trending */
+.buy-now,.addcart {
+    display: none; 
+}
+
+.card:hover .buy-now,.addcart {
+    display: block; 
+}
+
+.buy-now,.addcart {
+    transition: transform 0.2s;
+}
+
+.buy-now,.addcart:hover {
+    transform: scale(1.05); 
+}
+.icon{
+    display: none;
+    transition: transform 0.2s; 
+}
+.card:hover .icon{
+    display: block;
+}
+.icon:hover {
+    transform: scale(1.05); 
+}
+
+.section1{
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.navbar.sticky-topp {
+    z-index: 100; 
+  }
+  
+
+  .carts{
+    margin-left: 4rem;
+  }
+
+  /* navbar */
+  nav{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+  }
+  
