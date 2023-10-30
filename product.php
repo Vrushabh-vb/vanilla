@@ -1,6 +1,5 @@
 <?php require 'navbar.php'; ?>
 
-
 <?php
 require 'dbconnect.php';
 session_start(); // Start the session

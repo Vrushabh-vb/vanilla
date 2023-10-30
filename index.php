@@ -8,6 +8,7 @@ session_start();
 <head>
   <title>HOME | Vanilla</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./img/fav.png"  type="image/x-icon">
 </head>
 
 <body>
@@ -130,9 +131,18 @@ session_start();
                     </a> -->
 
                       <a href="product.php?product_id=<?php echo $row['pid']; ?>" class="btn btn-dark buy-now" id="tr">See more</a>
-                      <button class="btn btn-dark add-to-cart" data-product-id="<?php echo $row['pid']; ?>">Add to Cart</button>
-
-
+                     <form method="POST" action="add_to_cart.php?product_id=<?php echo $productID; ?>">
+                        <input type="hidden" name="product_id" value=" <?php echo $product_id; ?>">
+                          <input type="hidden" name="product_name" value="<?php echo $product['title']; ?>">
+                          <input type="hidden" name="description" value="<?php echo $product['descr']; ?>">
+                          <input type="hidden" name="quantity" value="1">
+                          <input type="hidden" name="category" value="<?php echo $product['category']; ?>">
+                          <input type="hidden" name="size" value="Small"> <!-- Set the default size as needed -->
+                          <input type="hidden" name="price" value="<?php echo $product['price']; ?>">
+                          <!-- Add the 'img' input field here -->
+                          <input type="hidden" name="img" value="<?php echo $product['img']; ?>">
+                          <!-- <button type="submit"  class="btn btn-dark btn-block mt-1"  name="addtocart">Add to Cart</button> -->
+                        </form>
                     <div class="icon">
                       <!-- <i class="fas fa-shopping-cart m-1 "><a href="./card.php"><img src="./img/cart.png" alt="" style="width:1rem;"></i></a> Shopping cart icon -->
                       <i class="far fa-heart m-1"><img src="./img/heart.png" alt="" style="width:1rem;"></i> <!-- Like icon -->
@@ -156,40 +166,7 @@ session_start();
 
 
   <!-- Footer -->
-  <footer class="footer bg-light text-dark py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5>Contact Us</h5>
-          <p>123 Street Name<br>City, Country<br>Email: example@example.com<br>Phone: +123456789</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Shop</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Follow Us</h5>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>&copy; 2023 Fashion Hub. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <?php require'footer.php';?>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

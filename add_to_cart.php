@@ -49,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION["user_id"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="./img/fav.png"  type="image/x-icon">
 </head>
 
 <body>
@@ -144,6 +145,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION["user_id"])) {
                 </div>
                 </div>
             </section>
+
+            <!-- footer -->
+            <?php require'footer.php'; ?>
 </body>
 
 </html>
