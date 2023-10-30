@@ -145,7 +145,7 @@ session_start();
                         </form>
                     <div class="icon">
                       <!-- <i class="fas fa-shopping-cart m-1 "><a href="./card.php"><img src="./img/cart.png" alt="" style="width:1rem;"></i></a> Shopping cart icon -->
-                      <i class="far fa-heart m-1"><img src="./img/heart.png" alt="" style="width:1rem;"></i> <!-- Like icon -->
+                      <i class="far m-1"><img src="./img/heart.png" alt="" style="width:1rem;"></i> <!-- Like icon -->
                     </div>
                   </div>
                 </div>
