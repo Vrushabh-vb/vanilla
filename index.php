@@ -8,7 +8,7 @@ session_start();
 <head>
   <title>HOME | Vanilla</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./img/fav.png"  type="image/x-icon">
+  <link rel="shortcut icon" href="./img/clogo.png"  type="image/x-icon">
 </head>
 
 <body>
